@@ -1,0 +1,5 @@
+**It is composition because:**
+
+1. `House` **creates** `Room` objects inside its constructor.
+2. `Room`’s lifecycle **depends on** `House` (destroy House → Rooms are gone).
+3. `Room` is **not shared or injected** from outside; it’s tightly owned by `House`.
