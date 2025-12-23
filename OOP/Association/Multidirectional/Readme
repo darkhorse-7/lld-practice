@@ -1,0 +1,6 @@
+one to one:
+    user -> profile
+one to many:
+    dev(many) -> team(one)
+many to many:
+    users(many) -> groups(many)
