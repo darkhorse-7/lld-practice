@@ -1,0 +1,14 @@
+KEEP IT SIMPLE, YOU STUPID
+
+the calc implemented there can be done via interface also which is just over complecating things
+
+Final Thought
+The best code is the code that’s easiest to understand—not the code that impresses other developers with cleverness.
+
+Keeping things simple does not mean dumbing things down. It means choosing clarity over cleverness, readability over abstraction, and function over form.
+
+So the next time you write a class, ask yourself: "Can I make this simpler?"
+
+Because good design starts with keeping it simple.
+
+Here in this file we've made a utility class for EmailValidator since the logic is generic and can be used across various places .. but that is just over complicating stuffs right there
