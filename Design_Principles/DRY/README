@@ -1,0 +1,8 @@
+The DRY principle is more than just a tip for cleaner code. It is a mindset that helps you reduce risk, improve consistency, and write software that can evolve gracefully.
+
+The next time you find yourself copying code, stop and ask: Can I extract this instead?
+
+Following the DRY principle might take a bit more time up front, but it saves you much more time and effort in the long run.
+
+
+Here in this file we've made a utility class for EmailValidator since the logic is generic and can be used across various places
