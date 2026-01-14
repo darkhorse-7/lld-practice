@@ -1,0 +1,13 @@
+Concise SRP Rule:
+"One class = One job. If you use 'and' to describe it, split it."
+
+Quick Check:
+If your class changes for multiple unrelated reasons, it's doing too much.
+
+Example:
+❌ EmployeeManager → "Manages employees and sends emails and saves to database"
+✅ Split into: Employee, EmailSender, DatabaseSaver
+
+Simple Test:
+Can you change your class because of Tax law changes without affecting Database code? If no → violates SRP.
+
