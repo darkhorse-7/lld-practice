@@ -1,0 +1,75 @@
+# Open–Closed Principle (OCP)
+
+## Definition
+
+**Software entities should be open for extension but closed for modification.**
+
+In simple terms: **you should be able to add new behavior without changing existing code**.
+
+---
+
+## Why OCP Matters
+
+* Reduces risk of breaking existing code
+* Makes systems easier to maintain
+* Encourages clean design using abstractions
+
+---
+
+## ❌ Violates OCP (Bad Design)
+
+Adding a new discount requires modifying existing logic.
+
+```java
+class Discount {
+    double calculate(String type, double amount) {
+        if (type.equals("STUDENT")) return amount * 0.9;
+        if (type.equals("SENIOR")) return amount * 0.8;
+        return amount;
+    }
+}
+```
+
+**Problem:** Every new discount forces a change in this class.
+
+---
+
+## ✅ Follows OCP (Good Design)
+
+Use abstraction to allow extension without modification.
+
+```java
+interface Discount {
+    double apply(double amount);
+}
+
+class StudentDiscount implements Discount {
+    public double apply(double amount) {
+        return amount * 0.9;
+    }
+}
+
+class SeniorDiscount implements Discount {
+    public double apply(double amount) {
+        return amount * 0.8;
+    }
+}
+```
+
+```java
+class Bill {
+    double calculate(double amount, Discount discount) {
+        return discount.apply(amount);
+    }
+}
+```
+
+**Result:** New discounts are added as new classes. Existing code stays unchanged.
+
+---
+
+## Key Takeaway
+
+> **Extend behavior by adding new classes, not by changing existing ones.**
+
+Use **interfaces, abstract classes, and polymorphism** to apply OCP effectively.
