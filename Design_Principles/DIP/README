@@ -1,0 +1,12 @@
+//dependencies inversion principle
+//shouldn't depend on the classes rather depend on the abstraction
+//okay
+
+//not okay
+//class sqlDb
+//class userService -> creates obj of sqlDb
+//oksy
+//interface Db
+//class sqlDb implements Db
+//class userService
+// now can implement Db without hard coding shit
