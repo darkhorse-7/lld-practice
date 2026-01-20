@@ -1,0 +1,30 @@
+interface worker
+{
+    void work()
+    {
+
+    }
+    void eat()
+    {
+        
+    }
+}
+class sajith implements worker{
+// sajith works and eat
+}
+class robotNigga implements worker
+{
+    //robot works doesn't eat
+    //so violation of isp is happened here robot nigga is forced to implement something which he doesn't need
+    
+}
+
+interface workable
+{
+    void work()
+}
+interface eatable
+{
+    void eat()
+}
+// now sajith can implement both and robot can implement just workable 
