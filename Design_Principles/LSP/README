@@ -1,0 +1,23 @@
+if the subclass can't honour every promise of the super class it shouldn't extent it.
+
+eg:
+class bird
+    // can eat
+    // can fly
+class sparrow implements bird
+    // can honor both
+class penguin implements bird
+    // couldn't honor both
+    // violation
+    // doesn't exits
+
+use interface -->
+interface bird
+    // eat
+interface flyable
+    // eat 
+    // fly
+sparrow can extend flyable
+penguin can extend bird
+
+thats the way it should be
