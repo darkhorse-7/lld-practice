@@ -1,0 +1,86 @@
+**UML Class Diagram – Condensed Notes**
+
+---
+
+### 1. Class
+
+**Title:** Class
+**Syntax:**
+`ClassName`
+`attributes`
+`methods`
+**Eg:**
+`BankAccount`
+
+---
+
+### 2. Visibility Markers
+
+**Syntax:**
+`+` public
+`-` private
+`#` protected
+`~` package
+**Eg:**
+`+deposit()`
+`-balance`
+
+---
+
+### 3. Attributes
+
+**Title:** Attribute
+**Syntax:**
+`visibility name: type [multiplicity] = default`
+**Eg:**
+`-balance: double = 0.0`
+
+---
+
+### 4. Methods
+
+**Title:** Method
+**Syntax:**
+`visibility name(params): returnType`
+**Eg:**
+`+deposit(amount: double): void`
+
+---
+
+### 5. Interface
+
+**Title:** Interface
+**Syntax:**
+`«interface» InterfaceName`
+**Eg:**
+`«interface» Drawable`
+
+---
+
+### 6. Abstract Class
+
+**Title:** Abstract Class
+**Syntax:**
+`«abstract» ClassName` (italic)
+**Eg:**
+`«abstract» Shape`
+
+---
+
+### 7. Enumeration
+
+**Title:** Enumeration
+**Syntax:**
+`«enumeration» EnumName`
+**Eg:**
+`Color { RED, BLUE, GREEN }`
+
+---
+
+### 8. Multiplicity
+
+**Title:** Multiplicity
+**Syntax:**
+`1, 0..1, *, 1..*`
+**Eg:**
+`Customer 1 ---- * Order`
