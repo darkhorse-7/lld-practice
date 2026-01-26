@@ -1,0 +1,150 @@
+Here you go — **single block, ready to copy-paste into your README.md** 👇
+
+```md
+## UML Class Diagram – Quick Reference
+
+### 1. Class
+**Description:** Blueprint of an object defining its properties and behavior.  
+**Structure:** Name | Attributes | Methods  
+
+**Example**
+```
+
+## BankAccount
+
+-accountNumber: int
+-balance: double
+----------------
+
++deposit(): void
+
+```
+
+---
+
+### 2. Visibility Markers
+- `+` Public  
+- `-` Private  
+- `#` Protected  
+- `~` Package  
+
+---
+
+### 3. Attributes
+**Syntax**
+```
+
+visibility name: type [multiplicity] = defaultValue
+
+```
+**Example**
+```
+
+-balance: double = 0.0
+
+```
+
+---
+
+### 4. Methods
+**Syntax**
+```
+
+visibility name(parameters): returnType
+
+```
+**Example**
+```
+
++deposit(amount: double): void
+
+```
+
+---
+
+## Relationships in UML Class Diagram
+
+UML class diagrams define **six main types of relationships** between classes.
+
+---
+
+### 1. Association
+**Type:** Uses-a  
+**Description:** One class interacts with another class.  
+**Notation:** Solid line  
+
+```
+
+Car ─── Driver
+
+```
+
+---
+
+### 2. Aggregation
+**Type:** Has-a (weak)  
+**Description:** The part can exist independently of the whole.  
+**Notation:** Hollow diamond  
+
+```
+
+Car ◇── Engine
+
+```
+
+---
+
+### 3. Composition
+**Type:** Has-a (strong)  
+**Description:** The part cannot exist without the whole.  
+**Notation:** Filled diamond  
+
+```
+
+House ◆── Room
+
+```
+
+---
+
+### 4. Inheritance (Generalization)
+**Type:** Is-a  
+**Description:** Subclass inherits from superclass.  
+**Notation:** Hollow triangle arrow  
+
+```
+
+Animal △── Dog
+Animal △── Cat
+
+```
+
+---
+
+### 5. Realization (Implementation)
+**Type:** Implements interface  
+**Description:** Class implements methods of an interface.  
+**Notation:** Dashed line with hollow triangle  
+
+```
+
+Shape △ - - Rectangle
+Shape △ - - Circle
+
+```
+
+---
+
+### 6. Dependency
+**Type:** Uses (temporary)  
+**Description:** One class depends on another.  
+**Notation:** Dashed arrow  
+
+```
+
+Customer - - > Order
+
+```
+```
+
+
